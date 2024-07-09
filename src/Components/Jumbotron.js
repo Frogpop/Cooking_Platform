@@ -1,16 +1,17 @@
-import React from "react";
+import React, {Component} from "react";
 import { Container} from 'react-bootstrap'
 import styled from "styled-components"
-import {Jumbotron as Jumbo} from 'reactstrap'
 import image from '../Pages/Contacts/Contacts_background.jpg'
 const Styles = styled.div`
   .jumbo {
-    background: url(${image}) no-repeat fixed bottom;
+    background: url(${image}) no-repeat fixed center;
     background-size: cover;
+    text-align: left;
+    padding-left: 30px;
     color: #efefef;
-    height: 400px;
+    height: 600px;
     position: relative;
-    z-index: -2;
+    z-index: 0;
   }
   .overlay{
     background-color: black;
@@ -23,19 +24,29 @@ const Styles = styled.div`
     z-index: -1;
   }
 `;
-const Jumbotron = () =>{
-    <Styles>
-        <Jumbo fuild className="jumbo">
-            <div className="overlay"></div>
-            <Container>
-                <h1>Кулинарная платформа</h1>
-                <p>
-                    Тел.: +7-959-658-95-36
-                    E-mail: kulplat@ogo.com
-                    Адрес: просп. Ленина, 30
-                </p>
-            </Container>
-        </Jumbo>
-    </Styles>
+
+export default class Jumbotron extends Component{
+    constructor(props) {
+        super(props);
+        this.state ={
+            continf :`Тел.: +7-959-658-95-36
+E-mail: kulplat@ogo.com
+Адрес: просп. Ленина, 30`
+        }
+    }
+    render() {
+        return(
+            <>
+                <Styles>
+                    <Container fluid="md" className="jumbo">
+                        <div className="overlay"></div>
+                        <Container>
+                            <h1>Кулинарная платформа</h1>
+                            <p style={{whiteSpace: 'pre'}}>{this.state.continf}</p>
+                        </Container>
+                    </Container>
+                </Styles>
+            </>
+        );
+    }
 }
-export default Jumbotron;

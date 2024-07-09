@@ -1,10 +1,21 @@
-import React, {Component, useState, useEffect} from "react";
+import React, {Component} from "react";
 import { YMaps, Map, Placemark, FullscreenControl } from "@pbe/react-yandex-maps";
+
+
 const placeMerk ={
     geometry : [56.465390, 84.950164],
     properties: {
         hintContent: 'Офис кулинарной платформы',
-        balloonContent : "sdsd"
+        balloonContent : `
+          <div>
+            <h1>Офис кулинарной платформы</h1>
+            <div>
+                <p>Тел.: +7-959-658-95-36</p>
+                <p>E-mail: kulplat@ogo.com</p>
+                <p>Адрес: просп. Ленина, 30</p>
+            </div>
+          </div>
+        `
 
     },
     modules: ['geoObject.addon.balloon', 'geoObject.addon.hint']
