@@ -4,6 +4,7 @@ import logo from './logo192.png'
 import {Route, BrowserRouter as Router, Routes} from "react-router-dom";
 import Home from "../Pages/Home";
 import Test from "../Pages/Test";
+import Formulas from "../Pages/Formulas";
 export default class Header extends Component{
     render() {
         return(
@@ -24,6 +25,7 @@ export default class Header extends Component{
                             <Nav className="mr-auto">
                                 <Nav.Link href="/"> Home</Nav.Link>
                                 <Nav.Link href="/test">Test</Nav.Link>
+                                <Nav.Link href="/formulas">Formulas</Nav.Link>
                                 {/*
                                     Тут по шаблону добавляем кнопки в навигацию
                                 */}
@@ -36,6 +38,8 @@ export default class Header extends Component{
                     <Routes>
                         <Route exat path="/" element={<Home/>}/>
                         <Route exat path="/test" element={<Test/>}/>
+                        <Route exat path="/formulas" element={<Formulas/>}>
+                        </Route>
                         {/*
                             Тут по шаблону добавляем в роутер страницы
                         */}
