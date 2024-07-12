@@ -1,0 +1,72 @@
+[
+    {
+      "id" : 0,
+      "name" : "Лофт",
+      "alt-name" : "loft",
+      "logo" : "https://sun9-60.userapi.com/impg/PYvUrDt4tyYgOs2BAYxjerTNzq5cwKQYtTdPig/yTlv1k5li90.jpg?size=300x300&quality=96&sign=01307ccc793d0683b43ed64435d957a4&type=album",
+      "desc" : "Гастрономическая компания.\nКЕЙТЕРИНГ\nДОСТАВКА\nМАСТЕР-КЛАССЫ\nГАСТРО-КАФЕ"
+    },
+    {
+      "id" : 1,
+      "name" : "Идеаллия",
+      "alt-name" : "ideallia",
+      "logo" : "https://sun92-1.userapi.com/s/v1/ig2/9q-oV3DZyWE4dIjwFKt8KQv3_TGin1nr4pJPD4RvcTpSVAsoa2kL_Zdmwh_tijUGr511o_gBJAH7I1GywGFsBnEB.jpg?quality=95&crop=0,491,1079,1079&as=32x32,48x48,72x72,108x108,160x160,240x240,360x360,480x480,540x540,640x640,720x720&ava=1&u=rWZgAi02D1-6-knn8N0SDiBEIVZp8xo4tpH_EPTrgjw&cs=200x200",
+      "desc" : "Гастрономическая компания.\nКЕЙТЕРИНГ\nДОСТАВКА\nМАСТЕР-КЛАССЫ\nГАСТРО-КАФЕ"
+    },
+    {
+      "id" : 2,
+      "name" : "Сладкая фея",
+      "alt-name" : "sweetfairy",
+      "logo" : "https://sun6-22.userapi.com/s/v1/ig2/7HVBdDsQLSQ3FY4yHRUTuAJA-oJDnIhPlas2Id_6-aBaeQ6PbKD-tagBxSOpl0FGkzzzoztAJUW66XF56aksVBAv.jpg?size=100x100&quality=95&crop=107,107,864,864&ava=1",
+      "desc" : "Школа кондитеров «Сладкая фея»!\nОбучаем и создаем настроение уже 7 лет!\nЗдесь мастер-классы, курсы и комфортное пространство!\n\nЕжедневно 09:00–21:00\nПо предварительной записи: пн-вс\n\nПриходи Учись Удивляй"
+    },
+    {
+      "id" : 3,
+      "name" : "Студия имбирных пряников",
+      "alt-name" : "gingerbreadstudio",
+      "logo" : "https://cdn4.cdn-telegram.org/file/sM-BwTyuyN-b0QTGiOsdNBAqwsGBl5y6A5piX_fzOeSYbGhrWLmIj3_B3drCw3uwhaNvjjFZbKsaCqxOltDDj7rkXYueeeT-sPaGBzWE80OgdXC8CZBISpt3eFQkeJeltZMb4GMMlU1bXuvZbHjp3fNUs7PHmWUZ7LCKMOmr4ZsbV3W4MFQK802hPZ_rKb7EaJI1nPQ7TWsaU3u3YvGejduC7KKC_3YlZOrcHuMebaijnWHHH2ebmK5R5t7wEd0IZFsOVq9e6YLJddulN_rUN069pz4jO4GZZohPP3BgSJgQtuV9e1guY3dBgf1IIc0tBuimHmRZBwUY0jw__xNgTw.jpg",
+      "desc" : "Кулинарные курсы"
+    },
+    {
+      "id" : 4,
+      "name" : "ТД МирСнаб",
+      "alt-name" : "mirsnab",
+      "logo" : "https://mirsnab.su/userfiles/img/logo/logo_mirsnab.png",
+      "desc" : "Оптовая компания ТД МИРСНАБ - крупнейший поставщик сырья и ингредиентов для предприятий пищевого комплекса в Сибирском федеральном округе. Начала свою деятельность компания в 2004 году.\nГлавной особенностью работы компании является возможность поставок эксклюзивных высококачественных видов сырья, а также разработка индивидуальных планов модернизации технологии производства за счет продуктов современной пищевой промышленности."
+    },
+    {
+      "id" : 5,
+      "name" : "Baton bakery & cafe",
+      "alt-name" : "batonbakerycafe",
+      "logo" : "https://sun9-18.userapi.com/impg/RcnU6k9-Nwkf6w6OV33ZSiwxbp0jAhzmOxloxA/gLB-P3ihzqo.jpg?size=1440x1920&quality=95&sign=e48df351cef60fa1f2f040f85eed48ba&type=album",
+      "desc" : "Ваши любимые тортики и выпечка в Северске"
+    },
+    {
+      "id" : 6,
+      "name" : "University by Maglena",
+      "alt-name" : "universitybymaglena",
+      "logo" : "https://universitybymaglena.ru/assets/images/header/header-logo3.png",
+      "desc" : "Место, в котором ты научишься готовить вкусные полезные десерты, не ограничивать себя и своих детей в удовольствии вкусно питаться"
+    },
+    {
+      "id" : 7,
+      "name" : "Сибириада тк",
+      "alt-name" : "sibiriada",
+      "logo" : "https://azvezda.ru/wa-data/public/site/themes/vivashopazvezda11/img/logo.png?v1547805504",
+      "desc" : "Торговая Компания «Сибириада» основана в 1996 году и является поставщиком ингредиентов, материалов и инвентаря для производства кондитерских и хлебобулочных изделий.\n\nМноголетний опыт работы, устойчивые связи с поставщиками, позволяют поддерживать широкий ассортимент товаров и отслеживать современные тенденции развития рынка ингредиентов и инновационных технологий."
+    },
+    {
+      "id" : 8,
+      "name" : "Алгоритм-С",
+      "alt-name" : "algorithms",
+      "logo" : "https://algoritm-c.ru/logo.png",
+      "desc" : "✅Учебно-консультационный центр «Алгоритм-С» работает на рынке образовательных услуг в сфере дополнительного профессионального образования граждан с 1998 года.  \n✅Мы занимаемся подготовкой, переподготовкой и повышением квалификации специалистов в различных областях, проводим корпоративное обучение и тренинги, обеспечиваем своих слушателей стажировками по выбранной специальности, оказываем содействие в трудоустройстве. \n\n✅У нас работают преподаватели-практики высокой квалификации, обеспечивающие индивидуальный подход к каждому ученику на протяжении всего курса обучения.  \n\n✅Бесплатное переобучение "
+    },
+    {
+      "id" : 9,
+      "name" : "Внуки Эйнштейна",
+      "alt-name" : "einsteins",
+      "logo" : "https://sun6-20.userapi.com/s/v1/ig2/Lx8g8QlHvp6_h7DxZU8iJuxmnb-fu-7IGzPukgNte1q3C5pi3hS_lOuEhZQQFAhJAJx_Yd6G5csao584eWcqWUw6.jpg?size=400x400&quality=95&crop=3,0,694,694&ava=1",
+      "desc" : "Яркое познавательное научное шоу для детей. Несколько вариантов программ, которые с легкостью адаптируются под возраст детей от 5+\nВедущий-химик с педагогическим образованием. Более 1000 праздников.\nИнтерактивные зрелищные эксперименты на любые мероприятия.\n\nБольшое количество различных экспериментов удивят любого, даже если Вы видели уже подобное."
+    }
+]
