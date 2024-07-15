@@ -1,10 +1,12 @@
 import React,{Component} from "react";
 import {Container, Nav, Navbar} from "react-bootstrap";
-import logo from './logo192.png'
 import {Route, BrowserRouter as Router, Routes} from "react-router-dom";
+import logo from './logo192.png'
+import schools from '../res/shools.json'
 import Home from "../Pages/Home";
 import Test from "../Pages/Test";
-import Schools from "../Pages/Schools";
+import ListOfSchools from "../Pages/ListOfSchools";
+import School from "../Pages/School";
 export default class Header extends Component{
     render() {
         return(
@@ -38,7 +40,12 @@ export default class Header extends Component{
                     <Routes>
                         <Route exat path="/" element={<Home/>}/>
                         <Route exat path="/test" element={<Test/>}/>
-                        <Route exat path="/schools" element={<Schools/>}/>
+                        <Route exat path="/schools" element={<ListOfSchools/>}/>
+                        {schools.map((item)=>{
+                            return(
+                                <Route exat path={`/schools/${item.alt_name}`} element={<School id = {item.id}/>}/>
+                            )
+                        })}
                         {/*
                             Тут по шаблону добавляем в роутер страницы
                         */}
