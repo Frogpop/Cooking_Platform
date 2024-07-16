@@ -4,7 +4,7 @@ import {Card, Col, Container, Image, Row} from "react-bootstrap";
 import styled from "styled-components";
 const Styles = styled.div`
     .jumbo{
-        background: url(${"https://static.tildacdn.com/tild3563-3039-4734-b862-666363383538/XphzYEVh4RQ.jpg"}) no-repeat fixed top;
+        background: url(${props => props.pp}) no-repeat fixed top;
         background-size: cover;
         color: #efefef;
         position: relative;
@@ -28,7 +28,7 @@ export default class School extends Component{
     }
     render() {
         return(
-            <Styles >
+            <Styles pp = {this.pp.info.backimg}>
                 <h1>{this.pp.name}</h1>
                 <Container className="jumbo ms-0 me-0" fluid>
                     <div className="ovv"></div>
