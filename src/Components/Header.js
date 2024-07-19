@@ -5,8 +5,8 @@ import logo from './logo192.png'
 import schools from '../res/shools.json'
 import Home from "../Pages/Home";
 import Test from "../Pages/Test";
-import ListOfSchools from "../Pages/ListOfSchools";
-import School from "../Pages/School";
+import ListOfSchools from "../Pages/Schools/ListOfSchools";
+import School from "../Pages/Schools/School";
 export default class Header extends Component{
     render() {
         return(

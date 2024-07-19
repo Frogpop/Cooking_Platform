@@ -1,9 +1,9 @@
 import React,{Component} from "react";
-import schools from "../res/shools.json"
+import schools from "../../res/shools.json"
 import {Card, Col, Container, Image, Row} from "react-bootstrap";
 import styled from "styled-components";
-import TList from "../Components/List_of_teachers";
-import FormSchool from "../Components/FormSchool";
+import TList from "../../Components/Schools/List_of_teachers";
+import FormSchool from "../../Components/Schools/FormSchool";
 const Styles = styled.div`
     .jumbo{
         background: url(${props => props.pp}) no-repeat fixed top;

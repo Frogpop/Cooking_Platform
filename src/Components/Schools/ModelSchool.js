@@ -1,6 +1,6 @@
 import React,{Component} from "react";
 import {Button, Col, Container, Image, Modal, Row} from "react-bootstrap";
-import schools from "../res/shools.json";
+import schools from "../../res/shools.json";
 class GetData extends Component{
     render() {
         return(

@@ -1,7 +1,7 @@
 import React,{useState} from "react";
 import { ListGroup, Col, Button} from "react-bootstrap";
-import schools from '../res/shools.json';
-import ModelSchool from "../Components/ModelSchool";
+import schools from '../../res/shools.json';
+import ModelSchool from "../../Components/Schools/ModelSchool";
 
 export default function ListOfSchools(){
     const [currentPage, setCurrentPage] = useState(1);
