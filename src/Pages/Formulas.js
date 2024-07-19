@@ -6,8 +6,7 @@ export default class Formulas extends Component{
 
 
     render() {
-        const rec = <SingleFormula headline="1273" instrdescr="ASSADSAS"/>;
-        const gr=GroupList();
+        const gr=GroupList(["батин борщ","овощной суп","несквик с пивом"], "Адовые блюда");
         return(
             <div>
                 {gr}

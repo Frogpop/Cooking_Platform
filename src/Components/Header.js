@@ -5,6 +5,7 @@ import {Route, BrowserRouter as Router, Routes} from "react-router-dom";
 import Home from "../Pages/Home";
 import Test from "../Pages/Test";
 import Formulas from "../Pages/Formulas";
+import Formulatemplate from "../Pages/Formulatemplate";
 export default class Header extends Component{
     render() {
         return(
@@ -38,6 +39,7 @@ export default class Header extends Component{
                     <Routes>
                         <Route exat path="/" element={<Home/>}/>
                         <Route exat path="/test" element={<Test/>}/>
+                        <Route exat path="/батин борщ" element={<Formulatemplate/>}/>
                         <Route exat path="/formulas" element={<Formulas/>}>
                         </Route>
                         {/*
