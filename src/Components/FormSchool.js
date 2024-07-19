@@ -31,7 +31,7 @@ export default function FormSchool(){
                                         required
                                         type="text"
                                         placeholder="Ваше имя"/>
-                                    <Form.Control.Feedback type= "invalid" > Пожалуйста заполните ваше имя </Form.Control.Feedback>
+                                    <Form.Control.Feedback type= "invalid" > Пожалуйста, заполните ваше имя </Form.Control.Feedback>
                                 </Form.Group>
                                 <Form.Group as={Col} controlId="validationSurname">
                                     <Form.Label>Фамилия</Form.Label>

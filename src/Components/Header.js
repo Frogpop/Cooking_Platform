@@ -28,6 +28,8 @@ export default class Header extends Component{
                                 <Nav.Link href="/"> Home</Nav.Link>
                                 <Nav.Link href="/test">Test</Nav.Link>
                                 <Nav.Link href="/schools">Школы</Nav.Link>
+                                <Nav.Link href="/formulas">Рецепты</Nav.Link>
+                                <Nav.Link href="/tips">Советы</Nav.Link>
                                 {/*
                                     Тут по шаблону добавляем кнопки в навигацию
                                 */}
