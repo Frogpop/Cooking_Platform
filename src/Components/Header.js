@@ -7,6 +7,8 @@ import Home from "../Pages/Home";
 import Test from "../Pages/Test";
 import ListOfSchools from "../Pages/ListOfSchools";
 import School from "../Pages/School";
+import About from "../Pages/About"
+import ListOfTips from "./ListOfTips";
 export default class Header extends Component{
     render() {
         return(
@@ -25,11 +27,12 @@ export default class Header extends Component{
                         <Navbar.Toggle aria-controls="responsive-navbar-nav"/>
                         <Navbar.Collapse id="responsive-navbar-nav">
                             <Nav className="mr-auto">
-                                <Nav.Link href="/"> Home</Nav.Link>
+                                <Nav.Link href="/"> Главная</Nav.Link>
                                 <Nav.Link href="/test">Test</Nav.Link>
                                 <Nav.Link href="/schools">Школы</Nav.Link>
                                 <Nav.Link href="/formulas">Рецепты</Nav.Link>
                                 <Nav.Link href="/tips">Советы</Nav.Link>
+                                <Nav.Link href="/about">О нас</Nav.Link>
                                 {/*
                                     Тут по шаблону добавляем кнопки в навигацию
                                 */}
@@ -42,6 +45,8 @@ export default class Header extends Component{
                     <Routes>
                         <Route exat path="/" element={<Home/>}/>
                         <Route exat path="/test" element={<Test/>}/>
+                        <Route exat path="/about" element={<About/>}/>
+                        <Route exat path="/tips" element={<ListOfTips/>}/>
                         <Route exat path="/schools" element={<ListOfSchools/>}/>
                         {schools.map((item)=>{
                             return(
