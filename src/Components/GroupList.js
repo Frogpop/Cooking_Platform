@@ -4,7 +4,6 @@ function GroupList(inputitems, iheader){
     let items=inputitems;
     let header=iheader;
 
-
     return (
         <>
             <h1>{header}</h1>
