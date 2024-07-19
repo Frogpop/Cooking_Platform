@@ -2,6 +2,8 @@ import React,{Component} from "react";
 import schools from "../res/shools.json"
 import {Card, Col, Container, Image, Row} from "react-bootstrap";
 import styled from "styled-components";
+import TList from "../Components/List_of_teachers";
+import FormSchool from "../Components/FormSchool";
 const Styles = styled.div`
     .jumbo{
         background: url(${props => props.pp}) no-repeat fixed top;
@@ -41,7 +43,7 @@ export default class School extends Component{
                         </Col>
                     </Row>
                 </Container>
-                <h2 align={"center"}>Команда</h2>
+                <h2 align={"center"} style={{paddingTop : '2rem'}}>Наша команда</h2>
                 <Container style={{paddingTop : '2rem', paddingBottom : '2rem', alignItems : "center"}} className="me-0">
                     <Row xs={this.pp.info.team.length/3} md={3} className="g-4">
                         {
@@ -64,6 +66,10 @@ export default class School extends Component{
                         }
                     </Row>
                 </Container>
+                <h2 align='center' style={{paddingBottom : '1rem'}}> Преподавательский состав</h2>
+                <TList teachers = {this.pp.info.teachers}/>
+                <h2 align='center' style={{paddingTop : '2rem', paddingBottom : '1rem'}}>Надумали записаться к нам? Заполните форму прямо сейчас!</h2>
+                <FormSchool/>
             </Styles>
         )
     }
