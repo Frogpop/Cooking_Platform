@@ -10,7 +10,7 @@ const blogger = {
     recipes: [
         { name: "Торт Наполеон", link: "/recipes/napoleon-cake" },
         { name: "Шоколадный фондан", link: "/recipes/chocolate-fondant" },
-        { name: "Кексы с кремом", link: "/recipes/cream-cupcakes" }
+        { name: "Адский борщ", link: "/recipes/batin-borsh" }
     ],
     articles: [
         { title: "Советы по приготовлению вкусных блюд", link: "/articles/cooking-tips" },
