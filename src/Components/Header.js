@@ -5,6 +5,7 @@ import logo from './logo192.png'
 import schools from '../res/shools.json'
 import Home from "../Pages/Home";
 import Test from "../Pages/Test";
+import TipsPage from "../Pages/Tips";
 import HealthFoodArticles from "../Pages/healthFood-articles";
 import HealthFoodRecipes from "../Pages/healthFood-recipes";
 import ListOfSchools from "../Pages/Schools/ListOfSchools";
@@ -30,6 +31,7 @@ export default class Header extends Component{
                             <Nav className="mr-auto">
                                 <Nav.Link href="/"> Home</Nav.Link>
                                 <Nav.Link href="/test">Test</Nav.Link>
+                                <Nav.Link href="/tips">Полезные советы</Nav.Link>
                                 <NavDropdown title="Здоровое питание">
                                     <NavDropdown.Item href="/healthfood-articles">Статьи</NavDropdown.Item>
                                     <NavDropdown.Item href="/healthfood-recipes">Рецепты</NavDropdown.Item>
@@ -48,6 +50,7 @@ export default class Header extends Component{
                     <Routes>
                         <Route exat path="/" element={<Home/>}/>
                         <Route exat path="/test" element={<Test/>}/>
+                        <Route exat path="/tips" element={<TipsPage/>}/>
                         <Route exat path="/healthfood-articles" element={<HealthFoodArticles/>}/>
                         <Route exat path="/healthfood-recipes" element={<HealthFoodRecipes/>}/>
                         <Route exat path="/schools" element={<ListOfSchools/>}/>
