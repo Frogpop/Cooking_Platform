@@ -1,15 +1,15 @@
 // GroupList.js
 import React from "react";
 
-function GroupList({ inputitems, iheader }) {
+function GroupList({ inputItems = [], header = "Список" }) {
     return (
         <>
-            <h2>{iheader}</h2>
-            {inputitems.length === 0 ? (
+            <h2>{header}</h2>
+            {inputItems.length === 0 ? (
                 <p>Извините, пока нет доступных элементов.</p>
             ) : (
                 <ul className="list-group">
-                    {inputitems.map((item, index) => (
+                    {inputItems.map((item, index) => (
                         <li key={index} className="list-group-item">
                             <a href={item.link} className="list-group-item-action">
                                 {item.name}

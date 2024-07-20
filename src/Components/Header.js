@@ -44,7 +44,6 @@ export default class Header extends Component{
                                 <Nav.Link href="/bloggers">Кулинарные блогеры</Nav.Link>
                                 <Nav.Link href="/store">Магазин</Nav.Link>
                                 <Nav.Link href="/tips">Советы</Nav.Link>
-                                <Nav.Link href="/formulas">Formulas</Nav.Link>
                                 <Nav.Link href="/about">О нас</Nav.Link>
                                 <Nav.Link href="/contacts">Контакты</Nav.Link>
                                 <NavDropdown title="Здоровое питание">
@@ -70,7 +69,7 @@ export default class Header extends Component{
                         <Route path="/store" element={<Store/>}/>
                         <Route path="/store/:productId" element={<ProductDetail/>}/>
                         <Route path="/articles/:articleId" element={<ArticleDetail/>}/>
-                        <Route exat path="/батин борщ" element={<Formulatemplate/>}/>
+                        <Route exat path="/recipes/batin-borsh" element={<Formulatemplate/>}/>
                         <Route exat path="/formulas" element={<Formulas/>}>
                         </Route>
                         <Route exat path="/tips" element={<TipsPage/>}/>
