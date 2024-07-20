@@ -1,8 +1,7 @@
 import React,{Component} from "react";
-import SingleFormula from "../Components/SingleFormula";
-import GroupList from "../Components/GroupList.js";
-import {getNames} from "../Components/recepieNames";
-import {getHead} from "../Components/recepieNames";
+import GroupList2 from "../../Components/gr2.js";
+import {getNames} from "../../Components/recepieNames";
+import {getHead} from "../../Components/recepieNames";
 
 export default class Formulas extends Component{
     constructor(props){
@@ -15,7 +14,7 @@ export default class Formulas extends Component{
     render() {
         let r= getNames(this.state.stage);
         let y=getHead(this.state.stage);
-        let p= <GroupList inputitems={r} iheader={y} />;
+        let p= GroupList2(r,y);
         return(
             <div>
                 <ul style={{

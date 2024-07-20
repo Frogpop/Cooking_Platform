@@ -1,13 +1,12 @@
-import '../App.css';
-import video1 from "./aaaaaaaaaapache.mp4";
-import Comment from "../Components/comment";
-let Tags=[];
+import '../../App.css';
+import video1 from "../../res/aaaaaaaaaapache.mp4";
+import Comment from "../../Components/comment";
 
 function Formulatemplate()
 {
     const text=<div>
             <h1 style={{
-                backgroundImage:`url('${process.env.PUBLIC_URL}/paper.png')`,
+                backgroundImage:`url('${process.env.PUBLIC_URL} /paper.png')`,
                 backgroundPosition: 'center',
                 backgroundSize: 'cover',
                 backgroundRepeat: 'no-repeat',
@@ -20,7 +19,7 @@ function Formulatemplate()
                 alignItems: 'center',
                 justifyContent: 'center',
             }}>
-                <img src="/adovische.png" alt="image" />
+                <img src={process.env.PUBLIC_URL +"/adovische.png"} alt="image" />
             </div>
         <>
          <h1 style={{
@@ -100,7 +99,7 @@ function Formulatemplate()
             alignItems: 'center',
             justifyContent: 'center',
         }}>
-            <img src="/endresult.jpg" alt="image" />
+            <img src= {process.env.PUBLIC_URL + "/endresult.jpg"} alt="image"/>
         </div>
         <h1 style={{
             backgroundImage:`url('${process.env.PUBLIC_URL}/paper.png')`,
@@ -157,8 +156,5 @@ function Formulatemplate()
          </div>
          </>
      )
-}
-function Gettags(){
-    return(Tags);
 }
 export default Formulatemplate;

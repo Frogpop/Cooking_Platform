@@ -3,7 +3,7 @@ import { YMaps, Map, Placemark, FullscreenControl } from "@pbe/react-yandex-maps
 
 
 const placeMerk ={
-    geometry : [56.465390, 84.950164],
+    geometry : [56.46196, 84.947414],
     properties: {
         hintContent: 'Офис кулинарной платформы',
         balloonContent : `
@@ -29,7 +29,7 @@ export default class OfficeLocation extends Component{
             <div>
                 <YMaps>
                     <div>
-                        <Map height={600} width={window.innerWidth} defaultState={{ center: [56.465390, 84.950164], zoom: 15 }} options={
+                        <Map height={550} width={window.innerWidth} defaultState={{ center: [56.46196, 84.947414], zoom: 15 }} options={
                             {
                                 balloonPanelMaxMapArea: Number.POSITIVE_INFINITY
                             }

@@ -11,8 +11,8 @@ import BloggerProfile from "./Bloggers/BloggerProfile";
 import Store from "./store/Store";
 import ProductDetail from "./ProductDetail";
 import ArticleDetail from "./ArticleDetail";
-import Formulas from "../Pages/Formulas";
-import Formulatemplate from "../Pages/Formulatemplate";
+import Formulas from "../Pages/Formulas/Formulas";
+import Formulatemplate from "../Pages/Formulas/Formulatemplate";
 import TipsPage from "../Pages/Tips";
 import HealthFoodArticles from "../Pages/health/healthFood-articles";
 import HealthFoodRecipes from "../Pages/health/healthFood-recipes";
@@ -44,13 +44,12 @@ export default class Header extends Component{
                                 <Nav.Link href="/bloggers">Кулинарные блогеры</Nav.Link>
                                 <Nav.Link href="/store">Магазин</Nav.Link>
                                 <Nav.Link href="/tips">Советы</Nav.Link>
-                                <Nav.Link href="/formulas">Formulas</Nav.Link>
-                                <Nav.Link href="/about">О нас</Nav.Link>
-                                <Nav.Link href="/contacts">Контакты</Nav.Link>
                                 <NavDropdown title="Здоровое питание">
                                     <NavDropdown.Item href="/healthfood-articles">Статьи</NavDropdown.Item>
                                     <NavDropdown.Item href="/healthfood-recipes">Рецепты</NavDropdown.Item>
                                 </NavDropdown>
+                                <Nav.Link href="/about">О нас</Nav.Link>
+                                <Nav.Link href="/contacts">Контакты</Nav.Link>
                                 {/*
                                     Тут по шаблону добавляем кнопки в навигацию
                                 */}
