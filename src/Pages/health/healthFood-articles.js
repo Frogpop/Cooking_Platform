@@ -1,7 +1,7 @@
 import React,{Component} from "react";
 import {Accordion, Container, Image, Row} from "react-bootstrap";
 import styled from "styled-components";
-import articles from '../res/health-articles.json'
+import articles from '../../res/health-articles.json'
 
 const Styles = styled.div`
   .jumbo {

@@ -1,7 +1,7 @@
 import React,{useState} from "react";
-import ModalRecipes from "../Components/ModalRecipes";
+import ModalRecipes from "../../Components/ModalRecipes";
 import { Card, Container, Row} from "react-bootstrap";
-import recipes from '../res/health-recipes.json'
+import recipes from '../../res/health-recipes.json'
 
 export default function HealthFoodRecipes(){
     const [id, setId] = useState(0);

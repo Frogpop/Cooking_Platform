@@ -15,7 +15,7 @@ export default class Formulas extends Component{
     render() {
         let r= getNames(this.state.stage);
         let y=getHead(this.state.stage);
-        let p=GroupList(r, y);
+        let p= <GroupList inputitems={r} iheader={y} />;
         return(
             <div>
                 <ul style={{

@@ -2,8 +2,7 @@ import React from "react";
 import GroupList from "../Components/GroupList";
 import Promotions from "../Components/Promotions";
 import NewsAndArticles from "../Components/NewsAndArticles";
-import Bloggers from "../Components/Bloggers";
-import { Link } from "react-router-dom";
+import Bloggers from "../Components/Bloggers/Bloggers";
 import { Container } from "react-bootstrap";
 
 // Пример данных для популярных рецептов

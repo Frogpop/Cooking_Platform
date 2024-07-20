@@ -1,21 +1,21 @@
 import React,{Component} from "react";
 import {Container, Nav, Navbar, NavDropdown} from "react-bootstrap";
 import {Route, BrowserRouter as Router, Routes} from "react-router-dom";
-import logo from './logo192.png'
+import logo from '../res/logo192.png'
 import schools from '../res/shools.json'
 import Home from "../Pages/Home";
 import Test from "../Pages/Test";
 import About from "../Pages/About"
-import Bloggers from "../Components/Bloggers"
-import BloggerProfile from "./BloggerProfile";
-import Store from "./Store";
+import Bloggers from "./Bloggers/Bloggers"
+import BloggerProfile from "./Bloggers/BloggerProfile";
+import Store from "./store/Store";
 import ProductDetail from "./ProductDetail";
 import ArticleDetail from "./ArticleDetail";
 import Formulas from "../Pages/Formulas";
 import Formulatemplate from "../Pages/Formulatemplate";
 import TipsPage from "../Pages/Tips";
-import HealthFoodArticles from "../Pages/healthFood-articles";
-import HealthFoodRecipes from "../Pages/healthFood-recipes";
+import HealthFoodArticles from "../Pages/health/healthFood-articles";
+import HealthFoodRecipes from "../Pages/health/healthFood-recipes";
 import ListOfSchools from "../Pages/Schools/ListOfSchools";
 import School from "../Pages/Schools/School";
 import Contacts from "../Pages/Contacts/Contacts";
