@@ -8,7 +8,7 @@ import { Container } from "react-bootstrap";
 
 // Пример данных для популярных рецептов
 const popularRecipes = [
-    { name: "Спагетти Карбонара", link: "/recipes/spaghetti-carbonara" },
+    { name: "Адский борщ", link: "/recipes/batin-borsh" },
     { name: "Куриный карри", link: "/recipes/chicken-curry" },
     { name: "Бефстроганов", link: "/recipes/beef-stroganoff" }
 ];
@@ -22,7 +22,7 @@ export default function Home() {
             </center>
 
             <div className="mt-2">
-                <GroupList inputitems={popularRecipes} iheader="Популярные рецепты" />
+                <GroupList inputItems={popularRecipes} header="Популярные рецепты" />
             </div>
 
             <div className="mt-3">
