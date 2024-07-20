@@ -1,46 +1,160 @@
 import '../App.css';
-import Text from 'react-text';
+import video1 from "./aaaaaaaaaapache.mp4";
+import Comment from "../Components/comment";
 let Tags=[];
 
 function Formulatemplate()
 {
-    const header="";
-    const text=<>
-            <h1>Мой батя готовит адовые блюда</h1>
-            <div>
+    const text=<div>
+            <h1 style={{
+                backgroundImage:`url('${process.env.PUBLIC_URL}/paper.png')`,
+                backgroundPosition: 'center',
+                backgroundSize: 'cover',
+                backgroundRepeat: 'no-repeat',
+                display: 'flex',
+                alignItems: 'center',
+                justifyContent: 'center',
+            }}>Мой батя готовит адовые блюда</h1>
+            <div style={{
+                display: 'flex',
+                alignItems: 'center',
+                justifyContent: 'center',
+            }}>
                 <img src="/adovische.png" alt="image" />
             </div>
         <>
-         <h1>Индигриенты</h1>
-         <ul>
-             <li>суп (желательно борщ): 1 сковорода</li>
-             <li>лук: 3 луковицы</li>
-             <li>чеснок: 2 головки</li>
-             <li>черный перец (по вкусу)</li>
-             <li>красный перец (по вкусу)</li>
-             <li>стакан муки</li>
-             <li>томатная паста: 400г</li>
-             <li>майонез: 400г</li>
+         <h1 style={{
+             backgroundImage:`url('${process.env.PUBLIC_URL}/paper.png')`,
+             backgroundPosition: 'center',
+             backgroundSize: 'cover',
+             backgroundRepeat: 'no-repeat',
+             display: 'flex',
+             alignItems: 'center',
+             justifyContent: 'center',
+         }}>Индигриенты</h1>
+         <ul style={{backgroundImage:`url('${process.env.PUBLIC_URL}/paper.png')`,
+             backgroundPosition: 'center',
+             backgroundSize: 'cover',
+             backgroundRepeat: 'no-repeat',}}>
+             <li style={{
+                 display: 'flex',
+                 alignItems: 'center',
+                 justifyContent: 'center',
+             }}>суп (желательно борщ): 1 сковорода</li>
+             <li style={{
+                 display: 'flex',
+                 alignItems: 'center',
+                 justifyContent: 'center',
+             }}>лук: 3 луковицы</li>
+             <li style={{
+                 display: 'flex',
+                 alignItems: 'center',
+                 justifyContent: 'center',
+             }}>чеснок: 2 головки</li>
+             <li style={{
+                 display: 'flex',
+                 alignItems: 'center',
+                 justifyContent: 'center',
+             }}>черный перец (по вкусу)</li>
+             <li style={{
+                 display: 'flex',
+                 alignItems: 'center',
+                 justifyContent: 'center',
+             }}>красный перец (по вкусу)</li>
+             <li style={{
+                 display: 'flex',
+                 alignItems: 'center',
+                 justifyContent: 'center',
+             }}>стакан муки</li>
+             <li style={{
+                 display: 'flex',
+                 alignItems: 'center',
+                 justifyContent: 'center',
+             }}>томатная паста: 400г</li>
+             <li style={{
+                 display: 'flex',
+                 alignItems: 'center',
+                 justifyContent: 'center',
+             }}>майонез: 400г</li>
          </ul>
         </>
-        <>
+        <div style={{
+            backgroundImage:`url('${process.env.PUBLIC_URL}/paper.png')`,
+            backgroundPosition: 'center',
+            backgroundSize: 'cover',
+            backgroundRepeat: 'no-repeat',
+            display: 'flex',
+            alignItems: 'center',
+            justifyContent: 'center',
+        }}>
             Ну такой вот примерно рецепт усредненный, потому что вариаций масса.
-            <br />Берется суп, он не греется, греть - это не про моего батю. Он берет этот суп, вываливает его на сковороду и начинает жарить.
-            <br />Добавляет в него огромное количество лука, чеснока, перца черного и красного МУКИ! для вязкости, томатная паста сверху.
+            <br />Возьмите суп, вывалите его на сковороду и начинайте жарить.
+            <br />Добавьте в него огромное количество лука, чеснока, перца черного и красного, не забудьте добавить МУКИ! для вязкости, томатная паста сверху.
             <br />Все это жарится до дыма.
             <br />Потом снимается с огня и остужается на балконе.
-            <br />Потом батя заносит и щедро полив майонезом начинает есть.
+            <br />Когда суп остудится, занесите его обратно в квартиру, щедро полив майонезом начинайте есть.
 
-        </>
-        <div>
+        </div>
+        <div style={{
+            display: 'flex',
+            alignItems: 'center',
+            justifyContent: 'center',
+        }}>
             <img src="/endresult.jpg" alt="image" />
         </div>
-        </>;
+        <h1 style={{
+            backgroundImage:`url('${process.env.PUBLIC_URL}/paper.png')`,
+            backgroundPosition: 'center',
+            backgroundSize: 'cover',
+            backgroundRepeat: 'no-repeat',
+            display: 'flex',
+            alignItems: 'center',
+            justifyContent: 'center',
+        }}>Видео гайд</h1>
+        <div style={{
+            display: 'flex',
+            alignItems: 'center',
+            justifyContent: 'center',
+        }}>
+            <video src={video1} width="800" height="400" controls="controls" autoPlay="false"/>
+        </div>
+        </div>;
 
      return(
          <>
-            <h1>{header}</h1>
+         <div style={{
+             backgroundImage:`url('${process.env.PUBLIC_URL}/fireland.jpg')`,
+             backgroundPosition: 'center',
+             backgroundSize: 'cover',
+             backgroundRepeat: 'no-repeat',
+         }}>
              {text}
+
+             <div>
+                 <h1 style={{
+                     backgroundImage:`url('${process.env.PUBLIC_URL}/paper.png')`,
+                     backgroundPosition: 'center',
+                     backgroundSize: 'cover',
+                     backgroundRepeat: 'no-repeat',
+                     display: 'flex',
+                     alignItems: 'center',
+                     justifyContent: 'center',
+                 }}>От самых умных</h1>
+                 <ul>
+                     <li>{Comment("Батя (мудрец 345)", "Из многолетнего опыта приготовления данного блюда, сделал вывод, что лучше всего готовить не из борща, а из нажористого рассольника. Блюдо прекрасно скрасит ваш винный вечер!")}</li><br/>
+                 </ul>
+             </div>
+
+             <h1 style={{
+                 backgroundImage:`url('${process.env.PUBLIC_URL}/paper.png')`,
+                 backgroundPosition: '-1230px',
+                 backgroundSize: 'cover',
+                 backgroundRepeat: 'no-repeat',}}>Отзывы</h1>
+         <ul>
+             <li>{Comment("Ершат Ордынов", "Бате очень понравилось! Ел и всё приговаривал 'Ух блин'")}</li><br/>
+             <li>{Comment("Поварёнок Кузя", "У меня так друг умер")}</li>
+         </ul>
+         </div>
          </>
      )
 }
