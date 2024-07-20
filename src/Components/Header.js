@@ -9,6 +9,7 @@ import HealthFoodArticles from "../Pages/healthFood-articles";
 import HealthFoodRecipes from "../Pages/healthFood-recipes";
 import ListOfSchools from "../Pages/Schools/ListOfSchools";
 import School from "../Pages/Schools/School";
+import Contacts from "../Pages/Contacts/Contacts";
 export default class Header extends Component{
     render() {
         return(
@@ -34,6 +35,7 @@ export default class Header extends Component{
                                     <NavDropdown.Item href="/healthfood-recipes">Рецепты</NavDropdown.Item>
                                 </NavDropdown>
                                 <Nav.Link href="/schools">Школы</Nav.Link>
+                                <Nav.Link href="/contacts">Контакты</Nav.Link>
                                 {/*
                                     Тут по шаблону добавляем кнопки в навигацию
                                 */}
@@ -54,6 +56,7 @@ export default class Header extends Component{
                                 <Route exat path={`/schools/${item.alt_name}`} element={<School id = {item.id}/>}/>
                             )
                         })}
+                        <Route exat path="/contacts" element={<Contacts/>}/>
                         {/*
                             Тут по шаблону добавляем в роутер страницы
                         */}
