@@ -1,7 +1,7 @@
 import React, {Component} from "react";
 import { Container} from 'react-bootstrap'
 import styled from "styled-components"
-import image from '../Pages/Contacts/Contacts_background.jpg'
+import image from '../../Pages/Contacts/Contacts_background.jpg'
 const Styles = styled.div`
   .jumbo {
     background: url(${image}) no-repeat fixed center;
@@ -39,11 +39,11 @@ E-mail: kulplat@ogo.com
         return(
             <>
                 <Styles>
-                    <div className="jumbo">
+                    <div className="jumbo pt-4">
                         <div className="overlay"></div>
                         <Container>
-                            <h1>Кулинарная платформа</h1>
-                            <p style={{whiteSpace: 'pre'}}>{this.state.continf}</p>
+                            <h1 style={{fontSize :"46px"}}>Кулинарная платформа</h1>
+                            <p style={{whiteSpace: 'pre', fontSize : "24px"}}>{this.state.continf}</p>
                         </Container>
                     </div>
                 </Styles>
