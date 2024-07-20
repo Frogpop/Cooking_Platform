@@ -1,11 +1,14 @@
 import React,{Component} from "react";
 import {Container, Nav, Navbar, NavDropdown} from "react-bootstrap";
-import logo from './logo192.png'
 import {Route, BrowserRouter as Router, Routes} from "react-router-dom";
+import logo from './logo192.png'
+import schools from '../res/shools.json'
 import Home from "../Pages/Home";
 import Test from "../Pages/Test";
 import HealthFoodArticles from "../Pages/healthFood-articles";
 import HealthFoodRecipes from "../Pages/healthFood-recipes";
+import ListOfSchools from "../Pages/Schools/ListOfSchools";
+import School from "../Pages/Schools/School";
 export default class Header extends Component{
     render() {
         return(
@@ -30,6 +33,7 @@ export default class Header extends Component{
                                     <NavDropdown.Item href="/healthfood-articles">Статьи</NavDropdown.Item>
                                     <NavDropdown.Item href="/healthfood-recipes">Рецепты</NavDropdown.Item>
                                 </NavDropdown>
+                                <Nav.Link href="/schools">Школы</Nav.Link>
                                 {/*
                                     Тут по шаблону добавляем кнопки в навигацию
                                 */}
@@ -44,7 +48,12 @@ export default class Header extends Component{
                         <Route exat path="/test" element={<Test/>}/>
                         <Route exat path="/healthfood-articles" element={<HealthFoodArticles/>}/>
                         <Route exat path="/healthfood-recipes" element={<HealthFoodRecipes/>}/>
-
+                        <Route exat path="/schools" element={<ListOfSchools/>}/>
+                        {schools.map((item)=>{
+                            return(
+                                <Route exat path={`/schools/${item.alt_name}`} element={<School id = {item.id}/>}/>
+                            )
+                        })}
                         {/*
                             Тут по шаблону добавляем в роутер страницы
                         */}
