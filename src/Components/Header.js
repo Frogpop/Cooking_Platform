@@ -5,6 +5,12 @@ import logo from './logo192.png'
 import schools from '../res/shools.json'
 import Home from "../Pages/Home";
 import Test from "../Pages/Test";
+import About from "../Pages/About"
+import Bloggers from "../Components/Bloggers"
+import BloggerProfile from "./BloggerProfile";
+import Store from "./Store";
+import ProductDetail from "./ProductDetail";
+import ArticleDetail from "./ArticleDetail";
 import Formulas from "../Pages/Formulas";
 import Formulatemplate from "../Pages/Formulatemplate";
 import TipsPage from "../Pages/Tips";
@@ -31,16 +37,20 @@ export default class Header extends Component{
                         <Navbar.Toggle aria-controls="responsive-navbar-nav"/>
                         <Navbar.Collapse id="responsive-navbar-nav">
                             <Nav className="mr-auto">
-                                <Nav.Link href="/"> Home</Nav.Link>
+                                <Nav.Link href="/"> Главная</Nav.Link>
                                 <Nav.Link href="/test">Test</Nav.Link>
+                                <Nav.Link href="/schools">Школы</Nav.Link>
+                                <Nav.Link href="/formulas">Рецепты</Nav.Link>
+                                <Nav.Link href="/bloggers">Кулинарные блогеры</Nav.Link>
+                                <Nav.Link href="/store">Магазин</Nav.Link>
+                                <Nav.Link href="/tips">Советы</Nav.Link>
                                 <Nav.Link href="/formulas">Formulas</Nav.Link>
-                                <Nav.Link href="/tips">Полезные советы</Nav.Link>
+                                <Nav.Link href="/about">О нас</Nav.Link>
+                                <Nav.Link href="/contacts">Контакты</Nav.Link>
                                 <NavDropdown title="Здоровое питание">
                                     <NavDropdown.Item href="/healthfood-articles">Статьи</NavDropdown.Item>
                                     <NavDropdown.Item href="/healthfood-recipes">Рецепты</NavDropdown.Item>
                                 </NavDropdown>
-                                <Nav.Link href="/schools">Школы</Nav.Link>
-                                <Nav.Link href="/contacts">Контакты</Nav.Link>
                                 {/*
                                     Тут по шаблону добавляем кнопки в навигацию
                                 */}
@@ -53,13 +63,19 @@ export default class Header extends Component{
                     <Routes>
                         <Route exat path="/" element={<Home/>}/>
                         <Route exat path="/test" element={<Test/>}/>
+                        <Route exat path="/about" element={<About/>}/>
+                        <Route exat path="/bloggers" element={<Bloggers/>}/>
+                        <Route exat path="/schools" element={<ListOfSchools/>}/>
+                        <Route path="/bloggers/anna-petrova" element={<BloggerProfile/>}/>
+                        <Route path="/store" element={<Store/>}/>
+                        <Route path="/store/:productId" element={<ProductDetail/>}/>
+                        <Route path="/articles/:articleId" element={<ArticleDetail/>}/>
                         <Route exat path="/батин борщ" element={<Formulatemplate/>}/>
                         <Route exat path="/formulas" element={<Formulas/>}>
                         </Route>
                         <Route exat path="/tips" element={<TipsPage/>}/>
                         <Route exat path="/healthfood-articles" element={<HealthFoodArticles/>}/>
                         <Route exat path="/healthfood-recipes" element={<HealthFoodRecipes/>}/>
-                        <Route exat path="/schools" element={<ListOfSchools/>}/>
                         {schools.map((item)=>{
                             return(
                                 <Route exat path={`/schools/${item.alt_name}`} element={<School id = {item.id}/>}/>

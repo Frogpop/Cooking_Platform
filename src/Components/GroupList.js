@@ -1,17 +1,23 @@
+// GroupList.js
+import React from "react";
 
-
-function GroupList(inputitems, iheader){
-    let items=inputitems;
-    let header=iheader;
-
+function GroupList({ inputitems, iheader }) {
     return (
         <>
-            <h1>{header}</h1>
-            {items.length===0 && <p>Sorry braza, we got notting</p>
-            }
-        <ul className="list-group">
-        {items.map(item=> <a href = {item} className={"list-group-item list-group-item-action"} key={item}>{item}</a>)}
-        </ul>
+            <h2>{iheader}</h2>
+            {inputitems.length === 0 ? (
+                <p>Извините, пока нет доступных элементов.</p>
+            ) : (
+                <ul className="list-group">
+                    {inputitems.map((item, index) => (
+                        <li key={index} className="list-group-item">
+                            <a href={item.link} className="list-group-item-action">
+                                {item.name}
+                            </a>
+                        </li>
+                    ))}
+                </ul>
+            )}
         </>
     );
 }
