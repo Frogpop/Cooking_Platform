@@ -68,7 +68,7 @@ export default class Header extends Component{
                         <Route path="/store" element={<Store/>}/>
                         <Route path="/store/:productId" element={<ProductDetail/>}/>
                         <Route path="/articles/:articleId" element={<ArticleDetail/>}/>
-                        <Route exat path="/батин борщ" element={<Formulatemplate/>}/>
+                        <Route exat path="/recipes/batin-borsh" element={<Formulatemplate/>}/>
                         <Route exat path="/formulas" element={<Formulas/>}>
                         </Route>
                         <Route exat path="/tips" element={<TipsPage/>}/>
