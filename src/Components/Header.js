@@ -54,7 +54,6 @@ export default class Header extends Component{
                                     Тут по шаблону добавляем кнопки в навигацию
                                 */}
                             </Nav>
-
                         </Navbar.Collapse>
                     </Container>
                 </Navbar>

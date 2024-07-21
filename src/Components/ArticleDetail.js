@@ -20,7 +20,7 @@ const articles = {
             <p>Подача блюда также важна, как и его приготовление. Красивая сервировка делает еду еще вкуснее и аппетитнее.</p>
             <p>Следуйте этим советам, и ваши блюда всегда будут вкусными и аппетитными!</p>
         `,
-        image: "/images/cooking-tips.jpg"
+        image: "https://avatars.mds.yandex.net/i?id=3d7f38551e07db4165c92fab9521aba903bd6def-5284027-images-thumbs&n=13"
     },
     "everyday-recipes": {
         title: "10 рецептов на каждый день",

@@ -6,17 +6,17 @@ const bloggers = [
     {
         name: "Анна Петрова",
         profileLink: "/bloggers/anna-petrova",
-        profileImage: "/images/anna-petrova.jpg"
+        profileImage: "https://avatars.mds.yandex.net/i?id=8daa6ba6443f60fbc24606bdff248fd469382266-10096959-images-thumbs&n=13"
     },
     {
         name: "Иван Иванов",
         profileLink: "/bloggers/ivan-ivanov",
-        profileImage: "/images/ivan-ivanov.jpg"
+        profileImage: "https://avatars.mds.yandex.net/i?id=4b2501c7739ff9225ceeb08e78de0966-4451358-images-thumbs&n=13"
     },
     {
         name: "Мария Смирнова",
         profileLink: "/bloggers/maria-smirnova",
-        profileImage: "/images/maria-smirnova.jpg"
+        profileImage: "https://avatars.mds.yandex.net/i?id=eeaeb5c86629cbc7b44ea367cbc8e045-4590565-images-thumbs&n=13  "
     }
 ];
 

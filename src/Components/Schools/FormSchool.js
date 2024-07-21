@@ -19,7 +19,7 @@ export default function FormSchool(){
     };
     return(
         <div style={{ display : "flex", justifyContent : "center", paddingBottom : '2rem'}}>
-            <Card style={{width : '60rem', height :'20rem'}} >
+            <Card style={{width : '60rem', height :'22rem'}} >
                 <Card.Title className="mt-3 ms-4" style={{fontSize : "23px"}}>Пожалуйста, заполнените данные</Card.Title>
                 <Card.Body>
                     <Form noValidate validated={validated} onSubmit={handleSubmit}>
